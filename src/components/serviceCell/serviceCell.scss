@@ -1,0 +1,41 @@
+
+.serviceCell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    .icon{
+        font-size: 2.3rem;
+        background: var(--yellow);
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.4rem;
+        border-radius: 0.3rem;
+        color: white;
+    }
+    .name{
+        font-size: 1.8rem;
+        color: var(--black);
+        margin-bottom: 0.4rem;
+        font-weight: 600;
+    }
+    .desc{
+        font-size: 1.3rem;
+        color: var(--black);
+        margin-bottom: 0.9rem;
+    }
+    .readMore{
+        margin-bottom: 0.7rem;
+        a{
+            text-decoration: none;
+            color: var(--black);
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+
+.latestNews{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .heading{
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+
+            span{
+                color: var(--yellow);
+            }
+            
+        }
+        .title{
+            font-size: 1.6rem;
+            color: var(--black);
+            margin-bottom: 1.3rem;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .title{
+            font-size: 1.6rem;
+            color: var(--black);
+            margin-bottom: 1.3rem;
+            padding: 1rem;
+        }
+        .break{
+            height: 0.7rem;
+            width: 4rem;
+            background: var(--yellow);
+            position: relative;
+            border-radius: 0.3rem;
+            margin: 0.5rem 0;
+            margin-bottom: 1.5rem;
+
+            &::before{
+                content: '';
+                position: absolute;
+                right: 3.6rem;
+                display: block;
+                height: 0.3rem;
+                top: 0.2rem;
+                width: 5rem;
+                background: orange;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: 3.6rem;
+                display: block;
+                height: 0.3rem;
+                top: 0.2rem;
+                width: 5rem;
+                background: orange;
+               
+            }
+
+        }
+    }
+    .itemContainer{
+        display: grid;
+        column-gap: 1rem;
+        width: 100%;
+        padding: 0rem 0.9rem;
+        row-gap: 1rem;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    }
+
+
+    }

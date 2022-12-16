@@ -1,0 +1,65 @@
+
+
+.bannar{
+    background: url('../../doctors/doctorBanner.png') ,#b5b9b1;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        .header{
+            font-size: 3rem;
+            color: var(--blue);
+            font-weight: 800;
+            margin-bottom: 0.6rem;
+        }
+        .title{
+            font-size: 1.8rem;
+            font-weight: 600;
+            color:var(--black) ;
+            margin-bottom: 0.5rem;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+
+            .btn{
+                color: white;
+                background: var(--yellow);
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-right: 1rem;
+                padding: 0.4rem 0.8rem;
+                border-radius: 0.4rem;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                 background: rgb(53, 68, 30);
+                }
+            }
+        }
+    }
+    
+
+}
+
+@media screen and (max-width:800px) {
+    .bannar{
+        height: 300px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .bannar{
+        height: 180px;
+    }
+    
+}

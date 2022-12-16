@@ -1,0 +1,62 @@
+
+.cell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+
+    .logo{
+        font-size: 2rem;
+        color: white;
+        height:3rem;
+        width: 3rem;
+        background: var(--yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.3rem;
+
+        margin-bottom: 0.7rem;
+        img{
+            height: 2rem;
+            width: 2rem;
+            
+        }
+    }
+    .name{
+        font-size: 1.8rem;
+        color: var(--black);
+        margin-bottom: 0.4rem;
+        font-weight: 600;
+    }
+    .details{
+        font-size: 1.3rem;
+        color: var(--black);
+        margin-bottom: 0.9rem;
+        
+    }
+    .btn{
+        background: var(--yellow);
+        padding: 0.33rem 0.4rem;
+        border-radius: 0.3rem;
+        transition: 0.4s;
+        a{
+            font-size: 1.3rem;
+            text-decoration: none;
+            font-weight: 550;
+            color: white;
+            transition: 0.4s;
+        }
+
+    }
+    .btn:hover{
+        background-color: rgb(255, 60, 0);
+        a{
+            
+            letter-spacing: 0.05rem;
+        }
+    }
+
+}

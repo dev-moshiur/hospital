@@ -1,0 +1,143 @@
+
+
+.topBar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+        height: 20px;
+        
+        background: var(--yellow);
+
+        color: white;
+        .logoLinks{
+
+            &>*{
+                margin-left: 8px;
+                font-size: 1.3rem;
+                font-weight: 600;
+                cursor: pointer;
+                img{
+                    height: 1.3rem;
+                    width: 1.3rem;
+                    color: var(--yellow);
+                }
+            }
+            
+        }
+        .welcome{
+            font-size: 1.1rem;
+            span{
+                color: var(--blue);
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+        }
+        .logSign{
+            span{
+                font-size: 1.1rem;
+                
+            }
+            display: flex;
+            margin-right: 8px;
+            flex-wrap: wrap;
+
+            .log{
+                margin-left: 18px;
+                font-size: 1.1rem;
+                span{
+                    cursor: pointer;
+                    &:first-child{
+                        border-right: 3px solid white;
+                        margin-right: 4px;
+                        padding-right: 4px;
+                    }
+                }
+            }
+        }
+
+    }
+    .bottom{
+        display: flex;
+        // flex-wrap: wrap;
+        height: 100px;
+        width: 100%;
+
+        &>*{
+            flex: 1 1 26rem;
+            column-gap: 0.6rem;
+        }
+        .logo{
+            font-size: 2.2rem;
+            display: flex;
+            font-weight: 700;
+            justify-content: center;
+            align-items: center;
+            color: var(--black);
+        }
+        .contactCell{
+            background: var(--bg);
+            margin: 0.8rem 0.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            border-radius: 0.5rem;
+            .icons{
+                color: var(--yellow);
+                margin-bottom: 0.5rem;
+                transform: scale(1.4);
+            }
+
+            span{
+                &:first-child{
+                    font-size: 1.7rem;
+                    color: var(--yellow);
+                    margin-bottom: 0.6rem;
+                }
+                &:nth-child(2){
+                    font-size: 1.6rem;
+                    margin-bottom: 0.4rem;
+                    color: var(--black);
+                    font-weight: 600;
+                }
+                &:last-child{
+                    font-size: 1.3rem;
+                    color: var(--black);
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    .topBar{
+
+    .bottom{
+        .logo{
+            font-size: 1.7rem;
+            margin-left: 0.4rem;
+        }
+        .contactCell{
+            span{
+                &:last-child{
+                    font-size: 1rem;
+                    color: var(--black);
+                }
+            }
+        }
+    }
+    }
+    
+}

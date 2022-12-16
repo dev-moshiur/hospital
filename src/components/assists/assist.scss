@@ -1,0 +1,71 @@
+
+.assist{
+    width: 100%;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header{
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            
+        }
+        .title{
+            font-size: 1.6rem;
+            color: var(--black);
+            margin-bottom: 1.3rem;
+            padding: 1rem;
+        }
+        .break{
+            height: 0.7rem;
+            width: 4rem;
+            background: var(--yellow);
+            position: relative;
+            border-radius: 0.3rem;
+            margin: 0.5rem 0;
+
+            &::before{
+                content: '';
+                position: absolute;
+                right: 3.6rem;
+                display: block;
+                height: 0.3rem;
+                top: 0.2rem;
+                width: 5rem;
+                background: orange;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: 3.6rem;
+                display: block;
+                height: 0.3rem;
+                top: 0.2rem;
+                width: 5rem;
+                background: orange;
+               
+            }
+
+        }
+
+    }
+    .cellContainer{
+        display: grid;
+        margin: 1rem 1rem;
+        gap: 1rem;
+        
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    }
+
+}

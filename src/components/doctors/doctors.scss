@@ -1,0 +1,264 @@
+
+
+.doctors{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .header{
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+
+            span{
+                font-size: 2.4rem;
+            font-weight: 700;
+                color: var(--yellow);
+
+            }
+            
+
+        }
+        .tittle{
+            font-size: 1.6rem;
+            color: var(--black);
+            margin-bottom: 1.3rem;
+            padding: 1rem;
+        }
+        .break{
+            height: 0.7rem;
+            width: 4rem;
+            background: var(--yellow);
+            position: relative;
+            border-radius: 0.3rem;
+            margin: 0.5rem 0;
+
+            &::before{
+                content: '';
+                position: absolute;
+                right: 3.6rem;
+                display: block;
+                height: 0.3rem;
+                top: 0.2rem;
+                width: 5rem;
+                background: orange;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: 3.6rem;
+                display: block;
+                height: 0.3rem;
+                top: 0.2rem;
+                width: 5rem;
+                background: orange;
+               
+            }
+
+        }
+
+
+    }
+    .doctorsList{
+        display: grid;
+        width:calc(100% - 2rem);
+        margin: 1rem 1rem;
+        gap: 1rem;
+        
+        grid-template-columns: repeat(auto-fit,minmax(7rem,1fr));
+        .doctorsContainer{
+            height: 7rem;
+            overflow: hidden;
+            border: 1px solid var(--black);
+            border-radius: 0.4rem;
+            cursor: pointer;
+
+            &.active{
+                border: 4px solid var(--yellow);
+                position: relative;
+
+                &::after{
+                    content: '';
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    bottom: -0.75rem;
+                    left: 1.5rem;
+                    background: var(--yellow);
+                    transform: rotate(45deg);
+                }
+            }
+            img{
+                width: 100%;
+                border-radius: 0.4rem;
+            }
+        }
+    
+        
+    }
+    .doctorsInfo{
+        display: grid;
+        padding: 1rem;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit,minmax(23rem,1fr));
+        
+        .imgAndName{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            overflow: hidden;
+            margin-top: 1rem;
+
+            img{
+                width: 70%;
+                display: block;
+                margin: 0 auto;
+            }
+            .nameAndIspecialist{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                margin-top: 0.5rem;
+                .specialist{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: var(--black);
+                }
+                .name{
+                    color: var(--yellow);
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+                    
+                }
+
+            }
+            .btn{
+                background: var(--yellow);
+                padding: 0.4rem;
+                margin-top: 0.8rem;
+                border-radius: 0.4rem;
+                width: fit-content;
+                transition: 0.4s;
+                a{
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    color: white;
+                    font-weight: 600;
+                    transition: 0.4s;
+                    
+                }
+                
+            }
+            .btn:hover{
+                background-color: rgb(255, 60, 0);
+                a{
+                    
+                    letter-spacing: 0.05rem;
+                }
+            }
+        }
+        .overview{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            margin-top: 1rem;
+            .header{
+                font-size: 2.2rem;
+                font-weight: 500;
+                color: var(--black);
+                margin-bottom: 1rem;
+                span{
+                    font-size: 2.3rem;
+                    font-weight: 600;
+                    color: var(--black);
+                }
+            }
+            .tittle{
+                font-size:1.3rem;
+                color: var(--black);
+                opacity: 0.9;
+                margin-bottom: 0.6rem;
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0.7rem;
+                .row{
+                    font-size: 1.3rem;
+                    color: var(--black);
+                    margin-bottom: 0.7rem;
+    
+                    span{
+                        font-size: 1.4rem;
+                        margin-right: 0.3rem;
+                        font-weight: 600;
+                    }
+    
+                }
+            }
+        }
+        .patientComplement{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin-top: 1.2rem;
+            
+            align-items: center;
+            .heading{
+                font-size: 2.2rem;
+                color: var(--black);
+                margin-bottom: 1rem;
+            }
+            .details{
+                font-size: 1.3rem;
+                color: var(--black);
+                opacity: 0.9;
+                margin-bottom: 1rem;
+
+            }
+            .img{
+               width: 6rem;
+               height: 6rem;
+               overflow: hidden;
+               border-radius: 50%;
+               display: flex;
+               justify-content: center;
+               align-items: inherit;
+               border: 1px solid var(--black);
+               margin-bottom: 0.7rem;
+               img{
+                   height: 70%;
+               }
+            }
+            .name{
+                font-size: 1.6rem;
+                color: var(--black);
+                font-weight: 600;
+                margin-bottom: 0.3rem;
+            }
+            .student{
+                font-size: 1.4rem;
+                color: var(--black);
+                margin-bottom: 3rem;
+
+            }
+
+        }
+
+        
+
+    }
+
+}
